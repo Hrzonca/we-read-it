@@ -25,16 +25,16 @@ type Book {
     bookId: ID!
     authors: [String]
     descripton: String
-    title: String
+    title: String!
     image: String
     link: String
 }
 
 input BookInput {
-    bookId: ID!
+    bookId: String!
     authors: [String]
-    descripton: String
-    title: String
+    descripton: String!
+    title: String!
     image: String
     link: String
 }
